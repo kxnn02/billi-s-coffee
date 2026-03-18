@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -14,6 +20,7 @@ img {
 }
 
 .navigation {
+    flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,4 +37,73 @@ img {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 1rem;
+}
+
+
+.hero-content h1 {
+    font-size: 2.75rem;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+}
+
+.hero-content a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6f4e37;
+    color: white;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 64px;
+    gap: 24px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.hero-image {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.hero-image img {
+    object-fit: cover;
+}
+
+/* Services Section */
+.cart-col h1,
+.location-col h1 {
+    font-size: 2rem;
+}
+
+.cart-col p,
+.location-col p {
+    font-size: 1rem;
+}
+
+.cart-col ul li,
+.location-col ul li {
+    font-size: 1rem;
+}
+
+#services .container {
+    min-height: 100vh;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
 }
