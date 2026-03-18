@@ -101,9 +101,48 @@ img {
     font-size: 1rem;
 }
 
-#services .container {
+#services {
     min-height: 100vh;
+    padding: 0 64px;
+    gap: 24px;
+}
+
+#services .container {
     display: flex;
     padding: 2rem;
     gap: 2rem;
+    align-items: center;
+}
+
+
+.location-col {
+    flex-grow: 1;
+}
+
+.cart-col {
+    flex-grow: 1;
+}
+
+.cart-col img,
+.location-col img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-col h1,
+.location-col h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cart-col p,
+.location-col p {
+    margin-bottom: 1rem;
+}
+
+.cart-col ul,
+.location-col ul {
+    padding-left: 1.25rem;
 }
