@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,9 +9,16 @@
 }
 
 body {
+    font-family: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6f4e37;
 }
 
 img {
@@ -16,7 +27,7 @@ img {
 }
 
 .billis-logo {
-    height: 150px;
+    height: 80px;
 }
 
 .navigation {
@@ -25,6 +36,8 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
+    background-color: #fdf6ec;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .nav-links {
@@ -61,28 +74,37 @@ img {
     border-radius: 8px;
 }
 
+.hero-content a:hover {
+    background-color: #5a3e2b;
+    transition: background-color 0.3s ease;
+}
+
 #hero {
     display: flex;
     align-items: center;
     height: 100vh;
     padding: 0 64px;
     gap: 24px;
+    background-color: #fdf6ec;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     flex-grow: 1;
 }
 
 .hero-image {
-    flex-grow: 1;
+    flex-grow: 3;
     height: 100%;
 }
 
 .hero-image img {
     object-fit: cover;
+    height: 100%;
+    max-width: none;
 }
 
 /* Services Section */
@@ -102,6 +124,7 @@ img {
 }
 
 #services {
+    background-color: #f5ebe0;
     min-height: 100vh;
     padding: 0 64px;
     gap: 24px;
@@ -117,10 +140,12 @@ img {
 
 .location-col {
     flex-grow: 1;
+    padding: 1rem;
 }
 
 .cart-col {
     flex-grow: 1;
+    padding: 1rem;
 }
 
 .cart-col img,
@@ -145,4 +170,23 @@ img {
 .cart-col ul,
 .location-col ul {
     padding-left: 1.25rem;
+}
+
+.cart-col,
+.location-col {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+.cart-col h1,
+.location-col h1,
+.cart-col p,
+.location-col p,
+.cart-col ul,
+.location-col ul {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
