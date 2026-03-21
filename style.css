@@ -1,6 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --font-heading: 'Noto Serif', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3 { font-family: var(--font-heading); }
+body { font-family: var(--font-body); }
+
+root {
+  --color-primary: #4E342E;
+  --color-accent: #5E604D;
+  --color-bg-main: #FBF9F5;
+  --color-bg-tonal: #EFEEEA;
+  --color-text-main: #361F1A;
+  --color-text-muted: #827471;
+}
 
 * {
     box-sizing: border-box;
@@ -8,185 +23,24 @@
     padding: 0;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: #6f4e37;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
 .billis-logo {
-    height: 80px;
+    height: 100px;
 }
 
 .navigation {
-    flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
-    background-color: #fdf6ec;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 1rem;
 }
 
 .nav-links {
     display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-
-.hero-content h1 {
-    font-size: 2.75rem;
-    margin-bottom: 16px;
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 28px;
-}
-
-.hero-content a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #6f4e37;
-    color: white;
-    font-weight: bold;
-    padding: 12px 28px;
-    border-radius: 8px;
-}
-
-.hero-content a:hover {
-    background-color: #5a3e2b;
-    transition: background-color 0.3s ease;
-}
-
-#hero {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    padding: 0 64px;
-    gap: 24px;
-    background-color: #fdf6ec;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    flex-grow: 1;
-}
-
-.hero-image {
-    flex-grow: 3;
-    height: 100%;
-}
-
-.hero-image img {
-    object-fit: cover;
-    height: 100%;
-    max-width: none;
-}
-
-/* Services Section */
-.cart-col h1,
-.location-col h1 {
-    font-size: 2rem;
-}
-
-.cart-col p,
-.location-col p {
-    font-size: 1rem;
-}
-
-.cart-col ul li,
-.location-col ul li {
-    font-size: 1rem;
-}
-
-#services {
-    background-color: #f5ebe0;
-    min-height: 100vh;
-    padding: 0 64px;
-    gap: 24px;
-}
-
-#services .container {
-    display: flex;
-    padding: 2rem;
     gap: 2rem;
-    align-items: center;
+    list-style: none;
 }
 
-
-.location-col {
-    flex-grow: 1;
-    padding: 1rem;
-}
-
-.cart-col {
-    flex-grow: 1;
-    padding: 1rem;
-}
-
-.cart-col img,
-.location-col img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.cart-col h1,
-.location-col h1 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.cart-col p,
-.location-col p {
-    margin-bottom: 1rem;
-}
-
-.cart-col ul,
-.location-col ul {
-    padding-left: 1.25rem;
-}
-
-.cart-col,
-.location-col {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    padding-bottom: 1.5rem;
-}
-
-.cart-col h1,
-.location-col h1,
-.cart-col p,
-.location-col p,
-.cart-col ul,
-.location-col ul {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+.nav-links a {
+    text-decoration: none;
 }
